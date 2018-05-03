@@ -1,0 +1,10 @@
+fc906437b3e2d772ed75be7bbee4bbb5 *DESCRIPTION
+d5b3e24b4a7b4967fc557bc34a32c31e *LICENSE
+6ecd442a0c3ca8fcfdfe7f4f47be833a *NAMESPACE
+5215a0b7dccaf07b6cad451108641c6b *R/anim.R
+9d725779fff39681c66089736025201e *R/global.R
+680a00a2aff48ea8267232a1331e9575 *README.md
+35180d4a75117d68a58ccb70736f609d *inst/assets/addClass.js
+a06a3525da854143cc38f8df7e73d44e *inst/assets/animate.min.css
+261100fe160cf1be863ac1ac6132b02d *man/startAnim.Rd
+749e0353371c4d5f05968d911dfc586a *man/withAnim.Rd
