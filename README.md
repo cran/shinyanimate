@@ -1,7 +1,7 @@
 # shinyanimate
 
-[![version](http://www.r-pkg.org/badges/version/shinyanimate)](https://CRAN.R-project.org/package=animate)
-[![cranlogs](http://cranlogs.r-pkg.org/badges/shinyanimate)](http://cran.rstudio.com/web/packages/shinyanimate/index.html)
+[![version](http://www.r-pkg.org/badges/version/shinyanimate)](https://cran.r-project.org/package=shinyanimate)
+[![cranlogs](http://cranlogs.r-pkg.org/badges/shinyanimate)](https://cran.r-project.org/package=shinyanimate)
 
 shinyanimate package is an R wrapper for [animate.css](https://daneden.github.io/animate.css/). It allows user to easily add animations to any UI element in shiny app using the elements id.
 
@@ -26,12 +26,12 @@ library(shiny)
 library(shinyanimate)
 ui <- fluidPage(
   withAnim(),
-  div( id = 'shinyLogo', tags$img(src= "https://www.rstudio.com/wp-content/uploads/2014/04/shiny-600x695.png", width = "100px", height = "100px")),
+  div( id = 'shinyLogo', tags$img(src= "http://hexb.in/hexagons/shiny.png", width = "100px", height = "100px")),
   actionButton(inputId = "button", label = "Animate")
 )
 server <- function(input, output, session) {
   observeEvent(input$button,{
-    startAnim(session, 'shinyLogo', 'shake')
+    startAnim(session, 'shinyLogo', 'shakeX')
   })
 }
 shinyApp(ui, server)
@@ -45,7 +45,7 @@ library(shiny)
 library(shinyanimate)
 ui <- fluidPage(
   withAnim(),
-  div( id = 'shinyLogo', tags$img(src= "https://www.rstudio.com/wp-content/uploads/2014/04/shiny-600x695.png", width = "100px", height = "100px"))
+  div( id = 'shinyLogo', tags$img(src= "http://hexb.in/hexagons/shiny.png", width = "100px", height = "100px"))
 )
 server <- function(input, output, session) {
   observe(addHoverAnim(session, 'shinyLogo', 'pulse'))
@@ -63,7 +63,7 @@ ui <- fluidPage(
     tags$h1('Scroll below to see an animation'),
     br(), br(), br(), br(), br(), br(), br(),
     br(), br(), br(), br(), br(), br(), br(),
-    div( id = 'shinyLogo', tags$img(src= "https://www.rstudio.com/wp-content/uploads/2014/04/shiny-600x695.png", width = "100px", height = "100px"))
+    div( id = 'shinyLogo', tags$img(src= "http://hexb.in/hexagons/shiny.png", width = "100px", height = "100px"))
 )
 server <- function(input, output, session) {
     observe(addScrollAnim(session, 'shinyLogo', 'bounceInRight'))
